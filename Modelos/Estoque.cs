@@ -7,6 +7,11 @@ public class Estoque
     {
         Produtos.Add(Produto);
     }
+    public DeletarProduto(Produto produto)
+    {
+        System.Console.WriteLine("Tem certeza que deseja excluir esse produto?");
+        Produtos.Remove(produto);
+    }
     public void ExibirProdutosDoEstoque()
     {
         System.Console.WriteLine("Lista de produtos do Estoque: \n");
